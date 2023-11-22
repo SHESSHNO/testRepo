@@ -107,7 +107,9 @@ students
 ```
 #B.
 ``` {r num8b}
-students$Average <- (students$Grade1 + students$Grade2 + students$Grade3 + students$Grade4) / 4
+total_average <- 0
+
+count <- 0
 
 for (i in 1:nrow(students)) {
   average <- (students$Grade1[i] + students$Grade2[i] + students$Grade3[i] + students$Grade4[i]) / 4
